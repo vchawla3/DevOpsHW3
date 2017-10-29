@@ -1,8 +1,25 @@
 Cache, Proxies, Queues
 =========================
 
-![build](https://travis-ci.org/CSC-DevOps/Queues.svg?branch=master)
+### Conceptual Questions
 
+1. Some benefits of Feature Flags are that they provide an easy way to test new features on production servers to get actual results on how stable the code is. By using them, developers can easily roll out or roll back features in development.
+Some issues include TODOOO
+
+2.
+
+3.
+
+4.
+  a.
+  
+  b.
+  
+  c.
+
+
+WorkShop Details
+=========================
 ### Setup
 
 * Clone this repo, run `npm install`.

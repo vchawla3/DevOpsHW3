@@ -12,7 +12,7 @@
     "express": "^4.12.3",
     "multer": "^0.1.8",
     "redis": "^0.12.1",
-    "http-proxy":"^1.16.2",
+    "http-proxy": "^1.16.2",
     "chai": "^4.1.2",
     "chai-http": "^2.0.1",
     "mocha": "^3.5.0"

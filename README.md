@@ -4,18 +4,19 @@ Cache, Proxies, Queues
 ### Conceptual Questions
 
 1. Some benefits of Feature Flags are that they provide an easy way to test new features on production servers to get actual results on how stable the code is. By using them, developers can easily roll out or roll back features in development.
-Some issues include TODOOO
+Some issues include that building up a lot of features with flags can easily create a lot of technical debt. Also, if some feature are dependent on others, than turning off one feature may have a cascading effect and break multiple features.
 
-2.
+2. Some reasons to keep servers in different availability zones may be to increase latency. If the servers are geographically closer to where they are being used, then latency increases. Also, different zones help safeguard from any issues with failures and downtimes.
+If a company has redundant servers in various zones, then if one goes down, traffic can easily be redirected to the other. The different zones may also be to handle different laws in different countries.
 
-3.
+3. The purpose of the Circuit Breaker pattern is to prevent problems and failures that occur in one part of the software/service from cascading into other parts. 
+The 'circuit breaker' gets tripped when multiple consecutive failures occur. Once it is tripped, the entire service is basically shutdown for a period of time. If anything tries to invoke it, an error will occur, which is then ideally handled by the invoker.
+Operation toggles are similar in the idea that they turn on and off different system abilities. The key difference between the two is that operation toggles are manually toggled by users, while the circuit breaker pattern is tripped and shuts down then restarts the service/feature automatically.
 
 4.
-  a.
-  
-  b.
-  
-  c.
+   - a) traffic that peaks on Monday evenings
+   - b) real time and concurrent connections with peers
+   - c) A system with heavy upload traffic can be sped up using 
 
 
 WorkShop Details

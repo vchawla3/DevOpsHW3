@@ -6,7 +6,7 @@ Cache, Proxies, Queues
 1. Some benefits of Feature Flags are that they provide an easy way to test new features on production servers to get actual results on how stable the code is. By using them, developers can easily roll out or roll back features in development.
 Some issues include that building up a lot of features with flags can easily create a lot of technical debt. Also, if some feature are dependent on others, than turning off one feature may have a cascading effect and break multiple features.
 
-2. Some reasons to keep servers in different availability zones may be to increase latency. If the servers are geographically closer to where they are being used, then latency increases. Also, different zones help safeguard from any issues with failures and downtimes.
+2. Some reasons to keep servers in different availability zones may be to improve latency. If the servers are geographically closer to where they are being used, then latency is better. Also, different zones help safeguard from any issues with failures and downtimes.
 If a company has redundant servers in various zones, then if one goes down, traffic can easily be redirected to the other. The different zones may also be to handle different laws in different countries.
 
 3. The purpose of the Circuit Breaker pattern is to prevent problems and failures that occur in one part of the software/service from cascading into other parts. 
@@ -16,8 +16,17 @@ Operation toggles are similar in the idea that they turn on and off different sy
 4.
    - a) traffic that peaks on Monday evenings
    - b) real time and concurrent connections with peers
-   - c) A system with heavy upload traffic can be sped up using 
+   - c) A system with heavy upload traffic can be sped up using a load balancer to auto scale new instances once many upload requests start hitting the application.
 
+### Screencast
+
+[Here](https://youtu.be/fotCwrBk7oA)
+
+Some notes
+   - When cache feature is toggled ON, if it retrieves from disk, there is a timeout set for 1 second on the getLine method, so it shows it takes longer for demonstration purposes.
+   - When cache feature is toggled OFF, the time it took is not displayed
+   - For 'catfact/:num', the num parameter returns the num catfact starting from 0 index (so if num = 0, the first catfact will be returned). This could easily be modified if we wanted num = 1 to return the first catfact, by just decrementing the parameter in the function.
+   - The recents list does not include /favicon.ico because my browser kept making requests for it so I never add it to the list.
 
 WorkShop Details
 =========================

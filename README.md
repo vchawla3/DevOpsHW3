@@ -14,9 +14,9 @@ The 'circuit breaker' gets tripped when multiple consecutive failures occur. Onc
 Operation toggles are similar in the idea that they turn on and off different system abilities. The key difference between the two is that operation toggles are manually toggled by users, while the circuit breaker pattern is tripped and shuts down then restarts the service/feature automatically.
 
 4.
-   - a) traffic that peaks on Monday evenings
-   - b) real time and concurrent connections with peers
-   - c) A system with heavy upload traffic can be sped up using a load balancer to auto scale new instances once many upload requests start hitting the application.
+   - a) A system with traffic that peaks on Monday evenings could have server instances readily deployed that only allow traffic on Monday evenings. This way every Monday evening, the application can handle higher usage.
+   - b) A system with real time and concurrent connections with peers
+   - c) A system with heavy upload traffic can be sped up using a load balancer to auto scale new instances once many upload requests start hitting the application. Improving bandwith from the applications ISP by having a high Quality of Service requirement.
 
 ### Screencast
 

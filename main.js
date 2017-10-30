@@ -169,7 +169,7 @@ app.get('/toggleCacheFeature', function(req, res) {
     if (value == null || value == 0)
     {
       client.set("toggleCache", 1);
-      res.send('Cache is toggled ON');g
+      res.send('Cache is toggled ON');
     } else
     {
       client.set("toggleCache", 0);

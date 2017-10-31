@@ -17,8 +17,8 @@ Operation toggles are similar in the idea that they turn on and off different sy
    - a) A system with traffic that peaks on Monday evenings could have server instances readily deployed that only allow traffic on Monday evenings. This way every Monday evening, the application can handle higher usage.
    
    - b) A system with real time and concurrent connections with peers can distribute the load by putting connections across multiple threads as well as multiple servers so one server does not get overloaded. 
-   
-   - c) A system with heavy upload traffic can be sped up using a load balancer to auto scale new instances once many upload requests start hitting the application. Improving bandwidth from the applications ISP by having a high Quality of Service requirement. A CDN located on different sites can also improve performance. 
+   
+   - c) A system with heavy upload traffic can be sped up using a load balancer to auto scale new instances once many upload requests start hitting the application. Improving bandwidth from the applications ISP by having a high Quality of Service requirement. A CDN located on different sites can also improve performance. 
 
 ### Screencast
 
